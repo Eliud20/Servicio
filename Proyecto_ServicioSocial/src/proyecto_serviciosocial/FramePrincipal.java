@@ -58,69 +58,62 @@ public class FramePrincipal extends javax.swing.JFrame {
         panelRegistro.setBackground(new java.awt.Color(255, 255, 255));
 
         lbFiliacion.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        lbFiliacion.setForeground(new java.awt.Color(0, 0, 0));
         lbFiliacion.setText("FILIACIÓN:");
 
         txtFiliacion.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
 
         lbCurp.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        lbCurp.setForeground(new java.awt.Color(0, 0, 0));
         lbCurp.setText("CURP:");
 
         txtCurp.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        txtCurp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCurpActionPerformed(evt);
+            }
+        });
 
         lbRfc.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        lbRfc.setForeground(new java.awt.Color(0, 0, 0));
         lbRfc.setText("RFC:");
 
         txtRfc.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
 
         lbHomo.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        lbHomo.setForeground(new java.awt.Color(0, 0, 0));
         lbHomo.setText("HOMOCLAVE:");
 
         txtHomo.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
 
         lbDatos.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        lbDatos.setForeground(new java.awt.Color(0, 0, 0));
         lbDatos.setText("Datos Personales:");
 
         lbPaterno.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        lbPaterno.setForeground(new java.awt.Color(0, 0, 0));
         lbPaterno.setText("Apellido Paterno:");
 
         txtPaterno.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
 
         lbMaterno.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        lbMaterno.setForeground(new java.awt.Color(0, 0, 0));
         lbMaterno.setText("Apellido Materno:");
 
         txtMaterno.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
 
         lbNombre.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        lbNombre.setForeground(new java.awt.Color(0, 0, 0));
         lbNombre.setText("Nombre (s):");
 
         txtNombre.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
 
         lbDatos1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        lbDatos1.setForeground(new java.awt.Color(0, 0, 0));
         lbDatos1.setText("Domicilio:");
 
         lbPaterno1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        lbPaterno1.setForeground(new java.awt.Color(0, 0, 0));
         lbPaterno1.setText("Apellido Paterno:");
 
         txtPaterno1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
 
         lbMaterno1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        lbMaterno1.setForeground(new java.awt.Color(0, 0, 0));
         lbMaterno1.setText("Apellido Materno:");
 
         txtMaterno1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
 
         lbNombre1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        lbNombre1.setForeground(new java.awt.Color(0, 0, 0));
         lbNombre1.setText("Nombre (s):");
 
         txtNombre1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
@@ -278,8 +271,6 @@ public class FramePrincipal extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("tab4", jPanel3);
 
-        LOGO.setIcon(new javax.swing.ImageIcon("C:\\Users\\bradl\\Documents\\NetBeansProjects\\Proyecto_ServicioSocial\\src\\proyecto_serviciosocial\\LOGO-SCT.jpg")); // NOI18N
-
         javax.swing.GroupLayout panelFondoLayout = new javax.swing.GroupLayout(panelFondo);
         panelFondo.setLayout(panelFondoLayout);
         panelFondoLayout.setHorizontalGroup(
@@ -316,6 +307,10 @@ public class FramePrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtCurpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCurpActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCurpActionPerformed
 
     /**
      * @param args the command line arguments
